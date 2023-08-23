@@ -1,0 +1,71 @@
+html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image:  url(/element/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.contaner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contaner .title{
+    display:flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding-top:0 ;
+    top: 0;
+}
+
+.contaner .flower{
+    display:flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 450px;
+    padding: 0;
+    margin: 0;
+}
+
+.contaner .ballon{
+    display:flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.contaner .face{
+    display:flex;
+    position: absolute;
+    animation-name: faceanimation ;
+    animation-duration: 6s;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes faceanimation {
+    0%{width: 0 ;height:0;bottom: 0;}
+    25%{width: 25%;height:25%;bottom: 0;}
+    50%{width: 50% ;height:50%;bottom: 0;}
+    75%{width: 75% ;height:75%;bottom: 0;}
+    100%{width: 100% ;height:100%;bottom: 0;}
+}
